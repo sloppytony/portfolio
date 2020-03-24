@@ -1,0 +1,424 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: signa;
+    src: url("fonts/Signatra.otf");
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+.bg{
+    width: 100%;
+    height: 50vh;
+    background-image: url("pics/normalheights.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -25vh;
+}
+
+.bg-container{
+    width:100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(180deg, rgba(15, 15, 15, 0.7), rgba(82, 82, 82, 0.7));
+    font-family: signa;
+    font-size: 10vw;
+    text-shadow: 2px 2px 2px #347aff;
+}
+
+a{
+    text-decoration: none;
+    width:1%;
+    height: 1%;
+    color: white;
+}
+
+nav{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: #347aff;
+}
+
+
+.about-link, .project-link, .contact-link{
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(29, 29, 29, .8);
+
+}
+
+/* LINK HOVER EFFECTS GO HERE*/
+
+.nav-modal{
+    width:100%;
+    height: 50vh;
+}
+
+/* ABOUT SECTION */
+.about-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.icon{
+    width: 10%;
+    height: auto;
+}
+
+.about-p{
+    width: 100%;
+    height:10vh;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: poppins;
+    color: rgba(29, 29, 29, 1);
+    font-size: 1.7vw;
+}
+
+/* CONTACT SECTION*/
+.contact{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.github{
+    font-family: poppins;
+    width: 30%;
+    float: left;
+    color:white;
+}
+
+.git{
+    width: 8vw;
+    height: 6vh;
+    background-color: #347aff;
+    text-align: center;
+    border-radius: 5px;
+    
+    color: white;
+    transition: ease-in-out, .5s;
+    
+}
+
+.git:hover{
+    transition: ease-in-out, .5s;
+    width: 30%;
+    background-color: #285cbd;
+}
+
+.email{
+    font-family: poppins;
+    float: right;
+    width: 30%;
+}
+
+#mail{
+    width: 36vw;
+    height: 6vh;
+    background-color: #347aff;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    transition: ease-in-out, .5s;
+    font-size: 2vw;
+    align-items: center;
+    font-family: poppins;
+    
+}
+
+#mail:hover{
+    transition: ease-in-out, .5s;
+    width: 125%;
+    background-color: #285cbd;
+}
+
+.active-about{
+    transition: ease-in-out, .5s;
+    visibility: visible;
+    opacity: 1;
+    animation: fadeInAbout ease .5s;
+    
+}
+
+
+.active-contact{
+    transition: ease-in-out, .5s;
+    visibility: visible;
+    opacity: 1;
+    animation: fadeInContact ease .5s;
+}
+  
+  
+  /*PROJECTS SECTION*/
+  .projects{
+      position: absolute;
+      width:100%;
+      height:45vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      transition: ease-in, .5s;
+      visibility: hidden;
+      opacity: 0;
+  }
+  
+  img.pic{
+      width: 30vw;
+      height: auto;
+      border: solid 5px #285cbd;
+      border-radius: 5px;
+      
+     
+  }
+
+  .preview{
+      width: 33%;
+      height:44vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: ease-in, .5s;
+  }
+
+  .preview1{
+    width: 33%;
+    height:44vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: ease-in, .5s;
+  }
+
+  a.preview{
+      width: 30vw;
+      height: auto;
+  }
+
+
+  @media only screen and (min-width: 1025px){
+  
+    .preview:hover{
+      color: white;
+      background-color: #285cbd;
+      transition: ease-in, .5s;
+      height: 45vh;
+    }
+
+  .preview1:hover{
+    color: white;
+    background-color: #285cbd;
+    transition: ease-in, .5s;
+    height: 45vh;
+    }
+}
+
+    h1.title{
+      color:white;
+      
+      font-family: 'Oswald', sans-serif;
+      font-size: 2vw;
+      width: 100%;
+      text-align: center;
+      word-wrap: break-word;
+  }
+
+  .descript{
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align: center;
+      color:white;
+      font-family: poppins, sans-serif;
+      width:40vw;
+      height:30vh;
+      font-size: 2vh;
+  }
+
+  .active-projects{
+    transition: ease-in-out, .5s;
+    visibility: visible;
+    opacity: 1;
+    animation: fadeInProject ease .5s;
+
+  }
+
+  @keyframes fadeInAbout {
+    0% {
+      opacity:0;
+      height: 27vh;
+    }
+    100% {
+      opacity:1;
+      height: 29vh;
+    }
+  }
+
+  @keyframes fadeInContact {
+    0% {
+      opacity:0;
+      height: 43vh;
+    }
+    100% {
+      opacity:1;
+      height: 45vh;
+    }
+  }
+
+
+  @keyframes fadeInProject {
+    0% {
+      opacity:0;
+      height: 43vh;
+    }
+    100% {
+      opacity:1;
+      height: 45vh;
+    }
+  }
+
+  
+  
+  
+
+  @media only screen and (max-width: 1024px){
+    
+    body{
+        overflow: hidden;
+    }
+    
+    .about-link, .project-link, .contact-link{
+        font-size: 4vw;
+    }
+
+    .icon{
+        width: 15vw;
+        height: auto;
+        
+    }
+    
+    p.about-p{
+        font-size: 4vw;
+        width: 100%;
+        height: 3vh;
+    }
+    
+    .bg{
+        background-position: bottom;
+    }
+    
+    h1.title{
+        color:white;
+        background-color: #347aff;
+        font-size: 2.5vh;
+        line-height: 2.5vh;
+        width: 100%;
+        border-radius: 2px;
+        
+    }
+
+    .preview{
+        width: 33%;
+        height:45vh;
+        background-color: #347aff;
+    }
+
+    .preview1{
+        background-color: #347aff;
+        width: 34%;
+        height: 45vh;
+    }
+
+
+    
+
+    .descript{
+        color: white;
+        height:20vh;
+        background-color: #347aff;
+    }
+    .about-modal{
+        margin-top: 10%;
+    }
+
+    .about-p{
+        font-size: 3vw;
+    }
+
+    #mail{
+        height: 10%;
+        font-size: 2vw;
+        padding:1%;
+    }
+
+    .git{
+        width: 12vw;
+        height: 10%;
+        font-size: 2.5vw;
+        font-family: poppins;
+        color:black;
+        margin-left: 1vh;
+    }
+
+    @keyframes fadeInAbout {
+        0% {
+          opacity:0;
+          margin-top:8%
+        }
+        100% {
+          opacity:1;
+          margin-top: 10%
+        }
+      }
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: signa;
+    src: url("fonts/Signatra.otf");
+    
+}

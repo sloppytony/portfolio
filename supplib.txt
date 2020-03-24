@@ -1,0 +1,52 @@
+this is is a bunch of nonesense, just so you know
+
+<p>I'm passionate and self motivated. i came from the aotomotive industry as an auto body tech but computers have always been a point of fascination for me and now im seeking to make that my career. </p>
+
+<h1 class="title">ABOUT</h1>
+
+color: #347aff
+
+visibility: hidden;
+
+transition: ease-in-out, .5s;
+
+@media only screen and (min-width: 1366px;){
+    #mail{
+    padding-top: 2vh;
+    font-size: 2vw;
+    height: 3vh
+    }
+
+    #gith{
+    font-size: 2vw;
+    font-family: poppins;
+    color:white;
+    }
+
+    
+}
+
+
+background-color: #285cbd;
+      transition: ease-in, .5s;
+      height: 45vh;
+  }
+
+
+  .active-about{
+    transition: ease-in-out, .5s;
+    visibility: visible;
+    opacity: 1;
+    animation: fadeInAbout ease .5s;
+    
+  }
+
+
+ <div class="preview">
+                    <img src="pics/gallery.png" alt="gallery" class="pic">
+                    <h1><a href="https://dreamy-thompson-80c5c2.netlify.com" class="title" target="_blank">GALLERY</a></h1>
+                    <p class="descript">Artist to customer site to create artist revenue. Built with HTML, CSS, Javascript</p>
+                </div>
+
+
+                <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap" rel="stylesheet">
